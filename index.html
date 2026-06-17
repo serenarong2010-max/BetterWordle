@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordSplash - Candy Word Puzzle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <header class="game-header">
+            <h1 class="game-title">🍭 WordSplash 🍬</h1>
+            <div class="score-board">
+                <div class="score-item">
+                    <span class="score-label">Score</span>
+                    <span class="score-value" id="score">0</span>
+                </div>
+                <div class="score-item">
+                    <span class="score-label">Level</span>
+                    <span class="score-value" id="level">1</span>
+                </div>
+                <div class="score-item">
+                    <span class="score-label">Words</span>
+                    <span class="score-value" id="wordsFound">0</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="game-main">
+            <div class="word-target">
+                <h2>Find the Magic Word!</h2>
+                <div class="target-word" id="targetWord"></div>
+                <div class="hint" id="hint"></div>
+            </div>
+
+            <div class="candy-board" id="candyBoard"></div>
+
+            <div class="current-word">
+                <h3>Your Word:</h3>
+                <div class="word-display" id="currentWord"></div>
+                <div class="word-actions">
+                    <button class="btn btn-clear" id="clearBtn">Clear</button>
+                    <button class="btn btn-submit" id="submitBtn">Submit</button>
+                </div>
+            </div>
+
+            <div class="found-words">
+                <h3>Words Found:</h3>
+                <div class="words-list" id="wordsList"></div>
+            </div>
+        </main>
+
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <h2 id="modalTitle">Amazing!</h2>
+                <p id="modalMessage">You found a word!</p>
+                <div class="modal-reward" id="modalReward"></div>
+                <button class="btn btn-modal" id="modalBtn">Continue</button>
+            </div>
+        </div>
+
+        <div class="particles" id="particles"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
